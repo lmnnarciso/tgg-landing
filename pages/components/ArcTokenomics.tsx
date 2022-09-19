@@ -1,5 +1,6 @@
 import { Box, Flex, HStack, Text, VStack } from "@chakra-ui/react";
-
+import Image from "next/image";
+import { Chart } from "../../factory/assets";
 const distribution = [
   [
     {
@@ -35,7 +36,7 @@ const distribution = [
 
 export default function ArcTokenomics() {
   return (
-    <Flex py="64">
+    <Flex py="32" position="relative">
       <VStack gap="8">
         <Text fontSize="7xl">
           <Text as="span" color="brand.pink">
@@ -65,7 +66,11 @@ export default function ArcTokenomics() {
         })}
       </VStack>
       {/* Image */}
-      <Box>Image</Box>
+      <Box>
+        <Box top="15vmin" width="1000px" height="600px">
+          <Image src={Chart} layout="fill" />
+        </Box>
+      </Box>
     </Flex>
   );
 }

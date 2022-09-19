@@ -5,7 +5,7 @@ import GachaMachine from "../public/images/TGG_gacha_machine_v01_1000p_lossy25.g
 import GachaGirl from "../public/images/tgg-1.png";
 import ArcadeBG from "../public/images/Arcade_Final.jpg";
 import TGGLogo from "../public/images/tgg-logo.png";
-
+import Chart from "../public/images/Chart.svg";
 
 export {
     FireStone,
@@ -15,4 +15,5 @@ export {
     GachaGirl,
     ArcadeBG,
     TGGLogo,
+    Chart
 }
