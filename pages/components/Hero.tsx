@@ -25,7 +25,13 @@ export default function Hero() {
       </VStack>
       <Box>
         {/* <Box position="absolute" right="5vmin" zIndex="-1"> */}
-        <Image src={GachaGirl} width="600px" height="600px" layout="fixed" />
+        <Image
+          src={GachaGirl}
+          width="600px"
+          height="600px"
+          layout="fixed"
+          alt="Gacha Girl Hero"
+        />
         {/* </Box> */}
       </Box>
     </Flex>

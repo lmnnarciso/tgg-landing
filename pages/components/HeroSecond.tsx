@@ -30,7 +30,12 @@ export default function HeroSecond() {
   return (
     <Flex py="32" justifyContent="space-between">
       <Box>
-        <Image src={GachaMachine} width="500px" height="500px" />
+        <Image
+          src={GachaMachine}
+          width="500px"
+          height="500px"
+          alt="Gacha Machine"
+        />
       </Box>
       <VStack alignItems="center" gap="16">
         <Text fontSize="5xl">Gacha Girls are fully upgradeable NFTs</Text>
@@ -45,6 +50,7 @@ export default function HeroSecond() {
               height={stoneSize.height}
               width={stoneSize.width}
               src={FireStone}
+              alt="Fire stone"
             />
             <Text fontSize="2xl">Fire Stone</Text>
           </Box>
@@ -53,6 +59,7 @@ export default function HeroSecond() {
               height={stoneSize.height}
               width={stoneSize.width}
               src={AquaStone}
+              alt="aqua stone"
             />
             <Text fontSize="2xl">Aqua Stone</Text>
           </Box>
@@ -61,6 +68,7 @@ export default function HeroSecond() {
               height={stoneSize.height}
               width={stoneSize.width}
               src={TerraStone}
+              alt="terra stone"
             />
             <Text fontSize="2xl">Terra Stone</Text>
           </Box>
@@ -69,6 +77,7 @@ export default function HeroSecond() {
               height={stoneSize.height}
               width={stoneSize.width}
               src={TerraStone}
+              alt="Moonstone"
             />
             <Text fontSize="2xl">Moonstone</Text>
           </Box>
@@ -77,6 +86,7 @@ export default function HeroSecond() {
               height={stoneSize.height}
               width={stoneSize.width}
               src={TerraStone}
+              alt="Arc token"
             />
             <Text fontSize="2xl">$ARC token</Text>
           </Box>

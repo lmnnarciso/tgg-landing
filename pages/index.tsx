@@ -1,8 +1,6 @@
 import { Box, Container, Flex } from "@chakra-ui/react";
 import type { NextPage } from "next";
-import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import ArcTokenomics from "./components/ArcTokenomics";
 import Hero from "./components/Hero";
 import HeroSecond from "./components/HeroSecond";
@@ -16,7 +14,13 @@ const Home: NextPage = () => {
       <Flex justifyContent="space-between" gap="24" mx="80">
         {/* Logo */}
         <Box mt="-12">
-          <Image src={TGGLogo} width="200px" height="200px" layout="fixed" />
+          <Image
+            src={TGGLogo}
+            width="200px"
+            height="200px"
+            layout="fixed"
+            alt="TGG Logo"
+          />
         </Box>
         {/* Navigation */}
         <Flex

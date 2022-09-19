@@ -52,10 +52,10 @@ export default function ArcTokenomics() {
         </VStack>
         {distribution.map((items) => {
           return (
-            <HStack w="full" justifyContent="space-between">
+            <HStack w="full" key={items[0].name} justifyContent="space-between">
               {items.map((item) => (
                 <>
-                  <VStack w="full" alignItems="start">
+                  <VStack key={item.name} w="full" alignItems="start">
                     <Text>{item.name}</Text>
                     <Text color="yellow.200">{item.value}</Text>
                   </VStack>
@@ -68,7 +68,7 @@ export default function ArcTokenomics() {
       {/* Image */}
       <Box>
         <Box top="15vmin" width="1000px" height="600px">
-          <Image src={Chart} layout="fill" />
+          <Image src={Chart} layout="fill" alt="Distribution Chart" />
         </Box>
       </Box>
     </Flex>

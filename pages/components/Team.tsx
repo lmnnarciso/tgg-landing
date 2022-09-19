@@ -48,7 +48,7 @@ export default function Team() {
                 overflow: "hidden",
               }}
             >
-              <Image src={GachaGirl} layout="responsive" />
+              <Image src={GachaGirl} layout="responsive" alt="team member" />
             </Box>
             <Text fontSize="2xl">{member.name}</Text>
           </GridItem>
