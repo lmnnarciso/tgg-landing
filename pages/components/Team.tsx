@@ -29,11 +29,15 @@ const teamData = [
   },
 ];
 
-export default function Team() {
+export default function Team({ id }: { id: string }) {
   return (
-    <Flex gap="30">
+    <Flex
+      id={id}
+      gap={{ base: "40", lg: "30" }}
+      flexDir={{ base: "column-reverse", lg: "row" }}
+    >
       <Grid
-        gridTemplateColumns="1fr 1fr 1fr"
+        gridTemplateColumns={{ base: "1fr 1fr", lg: "1fr 1fr 1fr" }}
         gridTemplateRows="250px 250px"
         gap="20"
       >

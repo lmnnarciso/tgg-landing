@@ -1,7 +1,6 @@
 import {
   Flex,
   HStack,
-  List,
   ListItem,
   Text,
   UnorderedList,
@@ -32,9 +31,9 @@ const phase3 = [
   "Arcade Game",
   "RPG Game",
 ];
-export default function Roadmap() {
+export default function Roadmap({ id }: { id: string }) {
   return (
-    <VStack py="60" w="full">
+    <VStack py="60" w="full" id={id}>
       <Text fontSize="8xl" color="brand.aqua" w="full">
         Roadmap
       </Text>
@@ -46,6 +45,7 @@ export default function Roadmap() {
       >
         <Flex>
           <VStack>
+            <Text>Phase 0</Text>
             <UnorderedList>
               {phase1.map((item) => (
                 <ListItem key={item}>{item}</ListItem>
@@ -55,6 +55,7 @@ export default function Roadmap() {
         </Flex>
         <Flex>
           <VStack>
+            <Text>Phase 1</Text>
             <UnorderedList>
               {phase2.map((item) => (
                 <ListItem key={item}>{item}</ListItem>
@@ -64,6 +65,7 @@ export default function Roadmap() {
         </Flex>
         <Flex>
           <VStack>
+            <Text>Phase 2</Text>
             <UnorderedList>
               {phase3.map((item) => (
                 <ListItem key={item}>{item}</ListItem>

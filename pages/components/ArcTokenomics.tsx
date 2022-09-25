@@ -34,9 +34,16 @@ const distribution = [
   ],
 ];
 
-export default function ArcTokenomics() {
+export default function ArcTokenomics({ id }: { id: string }) {
   return (
-    <Flex py="32" position="relative">
+    <Flex
+      id={id}
+      py="32"
+      position="relative"
+      flexDirection={{ base: "column", lg: "row" }}
+      alignContent="center"
+      justifyContent="center"
+    >
       <VStack gap="8">
         <Text fontSize="7xl">
           <Text as="span" color="brand.pink">
@@ -66,9 +73,20 @@ export default function ArcTokenomics() {
         })}
       </VStack>
       {/* Image */}
-      <Box>
-        <Box top="15vmin" width="1000px" height="600px">
-          <Image src={Chart} layout="fill" alt="Distribution Chart" />
+      <Box display={{ base: "none", lg: "flex" }}>
+        <Box
+          alignItems="center"
+          // top={{ base: "100vmin", lg: "15vmin" }}
+          // width="1000px"
+          // height="600px"
+          mx="auto"
+        >
+          <Image
+            src={Chart}
+            width="1000px"
+            height="1000px"
+            alt="Distribution Chart"
+          />
         </Box>
       </Box>
     </Flex>

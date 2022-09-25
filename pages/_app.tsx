@@ -37,7 +37,9 @@ const theme = extendTheme({
     "gray-shadow": boxShadowGray,
   },
   fonts: {
-    body: `'DynaPuff', cursive`,
+    body: `Comfortaa, sans-serif `,
+    heading: `Comfortaa, sans-serif `,
+    mono: `Comfortaa, sans-serif `,
   },
 });
 

@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Flex,
   ListItem,
   Text,
@@ -10,8 +9,10 @@ import {
 import Image from "next/image";
 import {
   AquaStone,
+  ArcToken,
   FireStone,
   GachaMachine,
+  MoonStone,
   TerraStone,
 } from "../../factory/assets";
 
@@ -26,9 +27,15 @@ const stoneSize = {
   height: "100px",
 };
 
-export default function HeroSecond() {
+export default function HeroSecond({ id }: { id: string }) {
   return (
-    <Flex py="32" justifyContent="space-between">
+    <Flex
+      id={id}
+      py="32"
+      justifyContent="space-between"
+      flexDirection={{ base: "column", lg: "row" }}
+      alignItems={{ base: "center" }}
+    >
       <Box>
         <Image
           src={GachaMachine}
@@ -38,13 +45,15 @@ export default function HeroSecond() {
         />
       </Box>
       <VStack alignItems="center" gap="16">
-        <Text fontSize="5xl">Gacha Girls are fully upgradeable NFTs</Text>
+        <Text fontSize="5xl" textAlign="center">
+          Gacha Girls are fully upgradeable NFTs
+        </Text>
         <UnorderedList w="full" pl="8" fontSize="xl">
           {list.map((item) => (
             <ListItem key={item}>{item}</ListItem>
           ))}
         </UnorderedList>
-        <Flex justifyContent="space-between" w="full">
+        <Flex justifyContent="space-between" w="full" flexWrap="wrap">
           <Box>
             <Image
               height={stoneSize.height}
@@ -76,7 +85,7 @@ export default function HeroSecond() {
             <Image
               height={stoneSize.height}
               width={stoneSize.width}
-              src={TerraStone}
+              src={MoonStone}
               alt="Moonstone"
             />
             <Text fontSize="2xl">Moonstone</Text>
@@ -85,7 +94,7 @@ export default function HeroSecond() {
             <Image
               height={stoneSize.height}
               width={stoneSize.width}
-              src={TerraStone}
+              src={ArcToken}
               alt="Arc token"
             />
             <Text fontSize="2xl">$ARC token</Text>
