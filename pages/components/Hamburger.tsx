@@ -9,27 +9,6 @@ export function Hamburger() {
   return (
     <Flex>
       <Flex position="fixed" top="1rem" right="1rem" align="center">
-        {/* Desktop */}
-        {/* <Flex display={["none", "none", "flex", "flex"]}>
-          <Link href="/" passHref>
-            <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
-              Home
-            </Button>
-          </Link>
-
-          <Link href="/about" passHref>
-            <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
-              About
-            </Button>
-          </Link>
-
-          <Link href="/contact" passHref>
-            <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%">
-              Contact
-            </Button>
-          </Link>
-        </Flex> */}
-
         {/* Mobile */}
         <IconButton
           aria-label="Open Menu"
@@ -72,7 +51,7 @@ export function Hamburger() {
 
         <Flex flexDir="column" align="center">
           {navLinks.map((item) => (
-            <Link href={`${item.link}`} passHref>
+            <Link href={`${item.link}`} key={item.link} passHref>
               <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
                 {item.name}
               </Button>

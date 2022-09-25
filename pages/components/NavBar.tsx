@@ -44,7 +44,7 @@ export function NavBar() {
         py="32"
       >
         {navLinks.map((link) => (
-          <Box>
+          <Box key={link.link}>
             <a href={`${link.link}`} key={link.link}>
               {link.name}
             </a>
@@ -53,10 +53,18 @@ export function NavBar() {
       </Flex>
       {/* Socials */}
       <Flex gap="8" py="32" display={{ base: "none", lg: "flex" }}>
-        <a href="https://discord.gg/hgfuneuxwF" target="_blank">
+        <a
+          href="https://discord.gg/hgfuneuxwF"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaDiscord />
         </a>
-        <a href="https://twitter.com/TokyoGachaGirls" target="_blank">
+        <a
+          href="https://twitter.com/TokyoGachaGirls"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaTwitter />
         </a>
       </Flex>

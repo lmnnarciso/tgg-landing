@@ -6,7 +6,6 @@ import HeroSecond from "./components/HeroSecond";
 import Roadmap from "./components/Roadmap";
 import Team from "./components/Team";
 import WhitelistBanner from "./components/WhitelistBanner";
-import { TGGLogo } from "../factory/assets";
 import { NavBar } from "./components/NavBar";
 const Home: NextPage = () => {
   return (
