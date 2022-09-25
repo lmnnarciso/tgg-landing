@@ -1,6 +1,6 @@
 import { Box, Flex, Show, Text, VStack } from "@chakra-ui/react";
 import Image from "next/image";
-import { GachaGirl } from "../../factory/assets";
+import { GachaGirl } from "../factory/assets";
 import TGGButton from "./shared/Button";
 
 export default function Hero({ id }: { id: string }) {

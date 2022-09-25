@@ -1,6 +1,6 @@
 import { Box, Flex } from "@chakra-ui/react";
 import Image from "next/image";
-import { TGGLogo } from "../../factory/assets";
+import { TGGLogo } from "../factory/assets";
 import { Hamburger } from "./Hamburger";
 import { FaDiscord, FaTwitter } from "react-icons/fa";
 export const navLinks = [

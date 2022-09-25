@@ -1,6 +1,6 @@
 import { Box, Flex, HStack, Text, VStack } from "@chakra-ui/react";
 import Image from "next/image";
-import { Chart } from "../../factory/assets";
+import { Chart } from "../factory/assets";
 const distribution = [
   [
     {

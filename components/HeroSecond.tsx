@@ -14,7 +14,7 @@ import {
   GachaMachine,
   MoonStone,
   TerraStone,
-} from "../../factory/assets";
+} from "../factory/assets";
 
 const list = [
   "Upgrade your Gacha Girls with our Power Stone Gacha",

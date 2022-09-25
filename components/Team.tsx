@@ -1,6 +1,6 @@
 import { Box, Flex, Grid, GridItem, Text, VStack } from "@chakra-ui/react";
 import Image from "next/image";
-import { GachaGirl } from "../../factory/assets";
+import { GachaGirl } from "../factory/assets";
 
 const teamData = [
   {
