@@ -51,7 +51,7 @@ export default function HeroSecond({ id }: { id: string }) {
           zIndex="1"
           position="absolute"
           top="-2vmin"
-          left="22vmin"
+          right="22vmin"
           border="5px solid white"
           rounded="lg"
           w="40%"
