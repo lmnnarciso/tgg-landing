@@ -13,11 +13,14 @@
     "@chakra-ui/react": "^2.3.2",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@fontsource/comfortaa": "^4.5.9",
     "framer-motion": "^6",
     "next": "12.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "react-tsparticles": "^2.3.2",
+    "tsparticles": "^2.3.2"
   },
   "devDependencies": {
     "@types/node": "18.7.18",

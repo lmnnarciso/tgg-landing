@@ -39,9 +39,10 @@ export function NavBar() {
         as="nav"
         justifyContent="space-around"
         gap="16"
-        fontSize="xl"
         fontWeight="bold"
         py="32"
+        fontSize="2xl"
+        color="white"
       >
         {navLinks.map((link) => (
           <Box key={link.link}>

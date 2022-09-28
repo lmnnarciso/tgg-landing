@@ -19,15 +19,15 @@ export default function Hero({ id }: { id: string }) {
           fontSize={{ base: "6xl", lg: "8xl" }}
           textAlign={{ base: "center", lg: "start" }}
         >
-          THE CUTEST GIRLS ON THE BLOCK
+          {/* THE CUTEST GIRLS ON THE BLOCK CHAIN */}
+          THE FIRST GACHA GAME THAT{" "}
           <Text as="span" opacity="0.5">
-            CHAIN
-          </Text>
+            PAYS YOU
+          </Text>{" "}
+          TO PLAY
         </Text>
         <Text fontSize="2xl" textAlign={{ base: "center", lg: "start" }}>
-          Tokyo Gacha Girls is a 2D anime themed idle RPG that will feel and
-          play like a Japanese visual novel game, with a dash of Play-to-Earn
-          features.
+          Tokyo Gacha Girls is a 2D anime RPG and Japanese visual novel game.
         </Text>
         <TGGButton w="200px">Launch App</TGGButton>
       </VStack>
