@@ -1,7 +1,7 @@
 // pages/_app.js
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { AppProps } from "next/app";
-
+import "@fontsource/comfortaa/300.css";
 let boxShadow = "0px 0px 5px 1px rgba(253,168,168,0.9)";
 let boxShadowGray = "0px 0px 5px 3px rgba(108,112,111,0.9)";
 
