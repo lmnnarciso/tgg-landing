@@ -3,6 +3,9 @@ import Image from "next/image";
 import { TGGLogo } from "../factory/assets";
 import { Hamburger } from "./Hamburger";
 import { FaDiscord, FaTwitter } from "react-icons/fa";
+import { TbBrandDiscord } from "react-icons/tb";
+import { Icon } from "@chakra-ui/icons";
+import { AiFillTwitterCircle } from "react-icons/ai";
 export const navLinks = [
   { link: "#hero", name: "Home" },
   { link: "#hero-second", name: "About" },
@@ -59,14 +62,20 @@ export function NavBar() {
           target="_blank"
           rel="noreferrer"
         >
-          <FaDiscord />
+          <Icon as={FaDiscord} width="32px" height="32px" color="white" />
         </a>
         <a
           href="https://twitter.com/TokyoGachaGirls"
           target="_blank"
           rel="noreferrer"
         >
-          <FaTwitter />
+          <Icon
+            as={AiFillTwitterCircle}
+            width="32px"
+            height="32px"
+            color="white"
+            rounded="full"
+          />
         </a>
       </Flex>
     </Flex>
