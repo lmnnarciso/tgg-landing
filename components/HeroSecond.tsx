@@ -11,6 +11,7 @@ import {
   AquaStone,
   ArcToken,
   FireStone,
+  GachaGirl3,
   GachaMachine,
   MoonStone,
   TerraStone,
@@ -36,14 +37,37 @@ export default function HeroSecond({ id }: { id: string }) {
       flexDirection={{ base: "column", lg: "row" }}
       alignItems={{ base: "center" }}
     >
-      <Box>
-        <Image
-          src={GachaMachine}
-          width="500px"
-          height="500px"
-          alt="Gacha Machine"
-          unoptimized
-        />
+      <Box position="relative">
+        <Box position="relative" zIndex="3">
+          <Image
+            src={GachaMachine}
+            width="500px"
+            height="500px"
+            alt="Gacha Machine"
+            unoptimized
+          />
+        </Box>
+        <Box
+          zIndex="1"
+          position="absolute"
+          top="-2vmin"
+          left="22vmin"
+          border="5px solid white"
+          rounded="lg"
+          w="40%"
+          h="40%"
+          mb="-5"
+          // bg="white"
+        >
+          <Image
+            src={GachaGirl3}
+            width="500px"
+            height="500px"
+            alt="Gacha Machine"
+            unoptimized
+            layout="fill"
+          />
+        </Box>
       </Box>
       <VStack alignItems="center" gap="16">
         <Text fontSize="5xl" textAlign="center">
