@@ -42,6 +42,7 @@ export default function HeroSecond({ id }: { id: string }) {
           width="500px"
           height="500px"
           alt="Gacha Machine"
+          unoptimized
         />
       </Box>
       <VStack alignItems="center" gap="16">
@@ -60,6 +61,7 @@ export default function HeroSecond({ id }: { id: string }) {
               width={stoneSize.width}
               src={FireStone}
               alt="Fire stone"
+              unoptimized
             />
             <Text fontSize="2xl">Fire Stone</Text>
           </Box>
@@ -69,6 +71,7 @@ export default function HeroSecond({ id }: { id: string }) {
               width={stoneSize.width}
               src={AquaStone}
               alt="aqua stone"
+              unoptimized
             />
             <Text fontSize="2xl">Aqua Stone</Text>
           </Box>
@@ -78,6 +81,7 @@ export default function HeroSecond({ id }: { id: string }) {
               width={stoneSize.width}
               src={TerraStone}
               alt="terra stone"
+              unoptimized
             />
             <Text fontSize="2xl">Terra Stone</Text>
           </Box>
