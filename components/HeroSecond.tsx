@@ -57,7 +57,6 @@ export default function HeroSecond({ id }: { id: string }) {
           w="40%"
           h="40%"
           mb="-5"
-          // bg="white"
         >
           <Image
             src={GachaGirl3}

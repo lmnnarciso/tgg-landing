@@ -5,7 +5,7 @@ const distribution = [
   [
     {
       name: "Gacha Girls Emissions",
-      value: "69.42%",
+      value: "69.420%",
     },
     {
       name: "Bank Incentive",

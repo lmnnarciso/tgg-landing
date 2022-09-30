@@ -11,6 +11,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 import { Container as ParticleContainer, Engine } from "tsparticles-engine";
+import { Carousel } from "../components/Carousel";
 
 const Home: NextPage = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -109,7 +110,8 @@ const Home: NextPage = () => {
       >
         <Hero id="hero" />
         <HeroSecond id="hero-second" />
-        <WhitelistBanner id="" />
+        <Carousel />
+        <WhitelistBanner id="whitelist" />
         <ArcTokenomics id="tokenomics" />
         <Team id="team" />
         <Roadmap id="roadmap" />
