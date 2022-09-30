@@ -7,7 +7,7 @@ import GachaGirl from "../public/images/tgg-2.png";
 import GachaGirl3 from "../public/images/tgg-3.png";
 import ArcadeBG from "../public/images/Arcade_Final.jpg";
 import TGGLogo from "../public/images/tgg-logo.png";
-import Chart from "../public/images/Chart.svg";
+import Chart from "../public/images/Chart.png";
 import ArcToken from "../public/images/Arc_Token.svg";
 
 export {

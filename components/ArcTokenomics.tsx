@@ -4,11 +4,11 @@ import { Chart } from "../factory/assets";
 const distribution = [
   [
     {
-      name: "Gacha Girls Emissions",
+      name: "Gacha Girl Holder Rewards",
       value: "69.420%",
     },
     {
-      name: "Bank Incentive",
+      name: "Single Staking 'Bank' Rewards",
       value: "5%",
     },
   ],
@@ -63,8 +63,10 @@ export default function ArcTokenomics({ id }: { id: string }) {
               {items.map((item) => (
                 <>
                   <VStack key={item.name} w="full" alignItems="start">
-                    <Text>{item.name}</Text>
-                    <Text color="yellow.200">{item.value}</Text>
+                    <Text fontSize="3xl">{item.name}</Text>
+                    <Text fontSize="3xl" color="yellow.200">
+                      {item.value}
+                    </Text>
                   </VStack>
                 </>
               ))}
@@ -74,17 +76,11 @@ export default function ArcTokenomics({ id }: { id: string }) {
       </VStack>
       {/* Image */}
       <Box display={{ base: "none", lg: "flex" }}>
-        <Box
-          alignItems="center"
-          // top={{ base: "100vmin", lg: "15vmin" }}
-          // width="1000px"
-          // height="600px"
-          mx="auto"
-        >
+        <Box mx="auto" my="auto">
           <Image
             src={Chart}
-            width="1000px"
-            height="1000px"
+            width="8000px"
+            height="4000px"
             alt="Distribution Chart"
           />
         </Box>

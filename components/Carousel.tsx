@@ -26,16 +26,13 @@ export function Carousel() {
       spaceBetween={30}
       slidesPerGroup={2}
       loop={true}
+      navigation={true}
       loopFillGroupWithBlank={true}
-      pagination={{
-        enabled: true,
-        clickable: true,
-        dynamicBullets: true,
-      }}
-      modules={[Pagination]}
+      pagination={true}
+      modules={[Pagination, Navigation]}
       style={{
         height: "700px",
-        marginBottom: "-5rem",
+        marginBottom: "5rem",
       }}
     >
       <SwiperSlide>

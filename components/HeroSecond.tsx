@@ -18,9 +18,9 @@ import {
 } from "../factory/assets";
 
 const list = [
-  "Upgrade your Gacha Girls with our Power Stone Gacha",
-  "Infuse elemental stones by staking them to your Gacha Girl",
-  "Increase Gamer Score & Cosmic Level to increase daily rewards & $ARC earnings",
+  "Stake Elemental Stones to your Gacha Girl & increase their power",
+  "Raise your Gamer Score & Cosmic Level with items from the gacha",
+  "Increase your daily passive $ARC earning!",
 ];
 
 const stoneSize = {
@@ -37,7 +37,7 @@ export default function HeroSecond({ id }: { id: string }) {
       flexDirection={{ base: "column", lg: "row" }}
       alignItems={{ base: "center" }}
     >
-      <Box position="relative">
+      <Box position="relative" flex="1">
         <Box position="relative" zIndex="3">
           <Image
             src={GachaMachine}
@@ -68,11 +68,11 @@ export default function HeroSecond({ id }: { id: string }) {
           />
         </Box>
       </Box>
-      <VStack alignItems="center" gap="16">
-        <Text fontSize="5xl" textAlign="center">
-          Gacha Girls are fully upgradeable NFTs
+      <VStack alignItems="center" gap="16" flex="2">
+        <Text fontSize="7xl" textAlign="start">
+          Level Up your $ARC earnings with the Power Stone Gacha!
         </Text>
-        <UnorderedList w="full" pl="8" fontSize="xl">
+        <UnorderedList w="full" pl="8" fontSize="3xl">
           {list.map((item) => (
             <ListItem key={item}>{item}</ListItem>
           ))}
